@@ -45,7 +45,6 @@ TaxaSign.autorun_all( path )
 ```
 
 ## References
-OTU, VSEARCH, RDP Classifier, google colab, google drive
 
 * Rognes T, Flouri T, Nichols B, Quince C, Mahé F. (2016)
 **VSEARCH: a versatile open source tool for metagenomics.** *PeerJ* 4:e2584. DOI: [10.7717/peerj.2584](https://peerj.com/articles/2584/)
