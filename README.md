@@ -47,7 +47,9 @@ TaxaSign.autorun_all( path )
 ## References
 OTU, VSEARCH, RDP Classifier, google colab, google drive
 
-* Edgar RC (2010)
-**Search and clustering orders of magnitude faster than BLAST.**
-*Bioinformatics*, 26 (19): 2460-2461.
-doi:[10.1093/bioinformatics/btq461](http://dx.doi.org/10.1093/bioinformatics/btq461)
+* Rognes T, Flouri T, Nichols B, Quince C, Mahé F. (2016)
+**VSEARCH: a versatile open source tool for metagenomics.** *PeerJ* 4:e2584. DOI: [10.7717/peerj.2584](https://peerj.com/articles/2584/)
+
+* Wang, Q, G. M. Garrity, J. M. Tiedje, and J. R. Cole. (2007)
+**Naive Bayesian Classifier for Rapid Assignment of rRNA Sequences into the New Bacterial Taxonomy.** *Appl Environ Microbiol.* 73(16):5261-7. DOI: [10.1128/AEM.00062-07](https://aem.asm.org/content/73/16/5261.short)
+
