@@ -9,7 +9,8 @@ Another goal of this project is to create a pipeline for the person who is not f
 
 ## Install
 
-For the users who have own Linux system, they just need to install two other preprocess tools, VSEARCH and RDP Classifier. The TaxaSignpy is a python module so pipeline itself does not need extra installation steps. 
+For the users who have own Linux system, they just need to install two other preprocess tools, VSEARCH and RDP Classifier. The TaxaSignpy is a python module so pipeline itself does not need extra installation steps.
+
 However, for the users who are going to utilize cloud service, they can run the pipeline just with run the 'ipynb' on the Google Colaboratory.
 
 VSEARCH can be installed easily by using 'apt' command as below, or install manually with [VSEARCH github](https://github.com/torognes/vsearch/).
