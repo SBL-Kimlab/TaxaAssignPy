@@ -4,6 +4,7 @@
 ## Introduction
 
 The TaxaSignpy is a convenient and rapid pipeline for taxonomy assignments based on rRNA sequence. The TaxaSignpy automatically defines Operational Taxonomic Units (OTUs) with raw sequence data and classify the OTUs based on the naive Bayesian classifier method. For both processes, TaxaSignpy utilizes two other published tools, [VSEARCH](https://github.com/torognes/vsearch/) and [RDP Classifier](http://rdp.cme.msu.edu/classifier/classifier.jsp).
+
 Another goal of this project is to create a pipeline for the person who is not familiar with computation by using cloud services. For that reason, two cloud services of Google, [Colaboratory](https://colab.research.google.com/notebooks/intro.ipynb) and [Drive](https://www.google.com/drive/), was chosen. Google Colaboratory service with python3 was chosen to run the pipeline and Google drive was chosen to importing input data and store output results.
 
 ## Install
