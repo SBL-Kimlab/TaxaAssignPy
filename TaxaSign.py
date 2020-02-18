@@ -147,12 +147,15 @@ class taxasign :
         print( outtext )
         print( "\n------------------------------------------------------------------------\n" )
 
-        if os.path.exists( nch_file.replace( "OTU_define", "result_summary" ) ):
-            shutil.rmtree( nch_file.replace( "OTU_define", "result_summary" ) )
-        shutil.copy( nch_file, nch_file.replace( "OTU_define", "result_summary" ) )
-        if os.path.exists( otu_table.replace( "OTU_define", "result_summary" ) ):
-            shutil.rmtree( otu_table.replace( "OTU_define", "result_summary" ) )
-        shutil.copy( otu_table, otu_table.replace( "OTU_define", "result_summary" ) )
+        nch_file_cp = nch_file.replace( "OTU_define", "result_summary" )
+        if os.path.exists( nch_file_cp ):
+            shutil.rmtree( nch_file_cp )
+        shutil.copy( nch_file, nch_file_cp )
+        
+        out_table_cp = otu_table.replace( "OTU_define", "result_summary" )
+        if os.path.exists( out_table_cp ):
+            shutil.rmtree( out_table_cp )
+        shutil.copy( otu_table, out_table_cp )
 
     @staticmethod
     def taxonomy_assigning():
