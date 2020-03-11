@@ -43,7 +43,7 @@ or if you want to run all the processes at once, the module as below can be used
 impot TaxaAssign
 
 path = "directory of the folder which contains sequence data"
-TaxaSign.autorun_all( path )
+TaxaAssign.autorun_all( path )
 ```
 
 ## References
