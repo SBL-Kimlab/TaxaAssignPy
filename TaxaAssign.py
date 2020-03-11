@@ -441,7 +441,7 @@ class autorun_all :
         start_time = time.time()
 
         dir_user = os.path.abspath( os.path.join( os.getcwd() ) )
-        main_dir = dir_user + "/TaxaSign/"
+        main_dir = dir_user + "/TaxaAssign/"
         result_dir = main_dir + "result/"
         dir_merged = result_dir + "fastq_merged/"
         dir_filtered = result_dir + "fastq_filtered/"
