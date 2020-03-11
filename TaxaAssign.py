@@ -415,11 +415,11 @@ class taxaassign :
 
             y_values = list( data[ "tax_name" ] )
             x_values = list( data[ "tax_num" ] )
-            plt.style.use( [ 'dark_background' ] )
+            #plt.style.use( [ 'dark_background' ] )
             fig = plt.figure( figsize=( 15, len( y_values ) / 4 ) )
             ax = fig.add_subplot( 111 )
             ypos = range( len( x_values ) )
-            rects = plt.barh( ypos, x_values, align='center', height=0.5, color="teal" )
+            rects = plt.barh( ypos, x_values, align='center', height=0.5 )
             for i, rect in enumerate( rects ):
                 ax.text( 1.01 * rect.get_width(), rect.get_y() + rect.get_height() / 2.0, str( x_values[ i ] ), ha='left', va='center')
             plt.yticks( ypos, y_values )
