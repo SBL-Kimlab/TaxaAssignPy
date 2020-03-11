@@ -10,7 +10,7 @@ from matplotlib import pyplot as plt
 from IPython.display import clear_output
 
 
-class taxasign :
+class taxaassign :
     def __init__( self, directory ) :
         print( "Pipeline initiating.." )
         global file_vsearch, rdp_classifier
@@ -21,7 +21,7 @@ class taxasign :
         rdp_classifier = "rdp_classifier"
 
         dir_user = os.path.abspath( os.path.join( os.getcwd() ) )
-        main_dir = dir_user + "/TaxaSign/"
+        main_dir = dir_user + "/TaxaAssign/"
         result_dir = main_dir + "result/"
         dir_merged = result_dir + "fastq_merged/"
         dir_filtered = result_dir + "fastq_filtered/"
@@ -462,12 +462,12 @@ class autorun_all :
         os.makedirs( dir_tax_assign )
         os.makedirs( dir_result_summary )
 
-        taxasign.fastq_merge()
-        taxasign.fastq_filtering()
-        taxasign.OTU_defining()
-        taxasign.taxonomy_assigning()
-        taxasign.analysis_statistic()
-        taxasign.result_summary()
+        taxaassign.fastq_merge()
+        taxaassign.fastq_filtering()
+        taxaassign.OTU_defining()
+        taxaassign.taxonomy_assigning()
+        taxaassign.analysis_statistic()
+        taxaassign.result_summary()
 
         end_time = time.time() - start_time
         print( "Pipeline time consume : %s Min %s sec" % ( end_time // 60, int( end_time ) % 60 ) )
