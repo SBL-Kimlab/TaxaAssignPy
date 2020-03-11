@@ -1,15 +1,15 @@
 
-# TaxaSignpy
+# TaxaAssignPy
 
 ## Introduction
 
-The TaxaSignpy is a convenient and rapid pipeline for taxonomy assignments based on rRNA sequence. The TaxaSignpy automatically defines Operational Taxonomic Units (OTUs) with raw sequence data and classify the OTUs based on the naive Bayesian classifier method. For both processes, TaxaSignpy utilizes two other published tools, [VSEARCH](https://github.com/torognes/vsearch/) and [RDP Classifier](http://rdp.cme.msu.edu/classifier/classifier.jsp).
+The TaxaAssignPy is a convenient and rapid pipeline for taxonomy assignments based on rRNA sequence. The TaxaAssignPy automatically defines Operational Taxonomic Units (OTUs) with raw sequence data and classify the OTUs based on the naive Bayesian classifier method. For both processes, TaxaAssignPy utilizes two other published tools, [VSEARCH](https://github.com/torognes/vsearch/) and [RDP Classifier](http://rdp.cme.msu.edu/classifier/classifier.jsp).
 
 Another goal of this project is to create a pipeline for the person who is not familiar with computation by using cloud services. For that reason, two cloud services of Google, [Colaboratory](https://colab.research.google.com/notebooks/intro.ipynb) and [Drive](https://www.google.com/drive/), was chosen. Google Colaboratory service with python3 was chosen to run the pipeline and Google drive was chosen to importing input data and store output results.
 
 ## Install
 
-For the users who have own Linux system, they just need to install two other preprocess tools, VSEARCH and RDP Classifier. The TaxaSignpy is a python module so pipeline itself does not need extra installation steps.
+For the users who have own Linux system, they just need to install two other preprocess tools, VSEARCH and RDP Classifier. The TaxaAssignPy is a python module so pipeline itself does not need extra installation steps.
 
 However, for the users who are going to utilize cloud service, they can run the pipeline just with run the 'ipynb' on the Google Colaboratory.
 
@@ -22,25 +22,25 @@ RDP Classifier can be installed by using 'anaconda' as below, or install manuall
 `conda install -c bioconda rdp_classifier -y`
 
 ## Usage
-In the TaxaSignpy pipeline, there are seven different modules in detail. If you want to see the results of each step, you can use an individual module as below.
+In the TaxaAssignPy pipeline, there are seven different modules in detail. If you want to see the results of each step, you can use an individual module as below.
 
 ```
-import TaxaSign
+import TaxaAssign
 
 path = "directory of the folder which contains sequence data"
-TaxaSign.taxasign( path )
-TaxaSign.taxasign.fastq_merge()
-TaxaSign.taxasign.fastq_filtering()
-TaxaSign.taxasign.OTU_defining()
-TaxaSign.taxasign.taxonomy_assigning()
-TaxaSign.taxasign.analysis_statistic()
-TaxaSign.taxasign.result_summary()
+TaxaAssign.taxaassign( path )
+TaxaAssign.taxaassign.fastq_merge()
+TaxaAssign.taxaassign.fastq_filtering()
+TaxaAssign.taxaassign.OTU_defining()
+TaxaAssign.taxaassign.taxonomy_assigning()
+TaxaAssign.taxaassign.analysis_statistic()
+TaxaAssign.taxaassign.result_summary()
 ```
 
 or if you want to run all the processes at once, the module as below can be used.
 
 ```
-impot TaxaSign
+impot TaxaAssign
 
 path = "directory of the folder which contains sequence data"
 TaxaSign.autorun_all( path )
