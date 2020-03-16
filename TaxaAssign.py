@@ -101,7 +101,7 @@ class taxaassign :
 
         for filtered_sample in filtered_samples:
             filtered_file = dir_filtered + filtered_sample
-            file_name = filtered_sample.replace( "_filtered", "" ).replace( ".fasta", "" ).replace("-", "_").replace(" ", "_")
+            file_name = filtered_sample.replace( "_filtered", "" ).replace( ".fasta", "" ).replace( "-", "_" ).replace( " ", "_" )
 
             for seq in SeqIO.parse( filtered_file, "fasta" ):
                 to_write = ">%s[%s]\n%s\n" % ( file_name, seq.id, seq.seq )
@@ -267,7 +267,7 @@ class taxaassign :
             count_matrix = []
             for filtered_sample in filtered_samples:
                 summary_temp_matrix = []
-                f_name = filtered_sample.split( "_filtered" )[ 0 ].replace("-", "_").replace(" ", "_")
+                f_name = filtered_sample.split( "_filtered" )[ 0 ].replace( "-", "_" ).replace( " ", "_" )
                 summary_temp_matrix.append( f_name )
 
                 dic_temp_num[f_name] = 0
@@ -291,7 +291,7 @@ class taxaassign :
 
             for filtered_sample in filtered_samples:
                 summary_temp_matrix = []
-                f_name = filtered_sample.split( "_filtered" )[ 0 ]
+                f_name = filtered_sample.split( "_filtered" )[ 0 ].replace( "-", "_" ).replace( " ", "_" )
                 summary_temp_matrix.append( f_name )
                 for i in count_matrix:
                     if count_matrix.index( i ) != int( dic_sample_order[ f_name ] ) - 1:
