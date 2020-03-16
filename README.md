@@ -13,9 +13,12 @@ For the users who have own Linux system, they just need to install two other pre
 
 However, for the users who are going to utilize cloud service, they can run the pipeline just with run the 'ipynb' on the Google Colaboratory.
 
-VSEARCH can be installed easily by using 'apt' command as below, or install manually with [VSEARCH github](https://github.com/torognes/vsearch/).
+VSEARCH can be installed easily by using 'apt' or 'anaconda' command as below, or install manually with [VSEARCH github](https://github.com/torognes/vsearch/).
 
-`apt install vsearch -y`
+```
+apt install vsearch -y
+conda install -c bioconda vsearch -y
+```
 
 RDP Classifier can be installed by using 'anaconda' as below, or install manually with [RDP Classifier github](https://github.com/rdpstaff/classifier).
 
