@@ -22,7 +22,9 @@ conda install -c bioconda vsearch -y
 
 RDP Classifier can be installed by using 'anaconda' as below, or install manually with [RDP Classifier github](https://github.com/rdpstaff/classifier).
 
-`conda install -c bioconda rdp_classifier -y`
+```
+conda install -c bioconda rdp_classifier -y
+```
 
 ## Usage
 In the TaxaAssignPy pipeline, there are seven different modules in detail. If you want to see the results of each step, you can use an individual module as below.
