@@ -101,7 +101,7 @@ class taxaassign :
 
         for filtered_sample in filtered_samples:
             filtered_file = dir_filtered + filtered_sample
-            file_name = filtered_sample.replace( "_filtered", "" ).replace( ".fasta", "" ).repalce("-", "_").replace(" ", "_")
+            file_name = filtered_sample.replace( "_filtered", "" ).replace( ".fasta", "" ).replace("-", "_").replace(" ", "_")
 
             for seq in SeqIO.parse( filtered_file, "fasta" ):
                 to_write = ">%s[%s]\n%s\n" % ( file_name, seq.id, seq.seq )
