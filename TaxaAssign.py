@@ -390,7 +390,7 @@ class taxaassign :
             f = open( dir_result_summary + "%s_rdp-classifier.txt" % num, "r" )
             r = f.read()
             f.close()
-            count_table = r.split( "\r\n" * 2 )[ 0 ]
+            count_table = r.split( "\n" * 4 )[ 0 ]
             lines = count_table.split( "\n" )
             tax_name_lst = []
             tax_num_lst = []
