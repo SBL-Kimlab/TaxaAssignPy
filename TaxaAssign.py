@@ -255,7 +255,7 @@ class taxaassign :
             temp_num += 1
 
         ##  Writing assignment statistic with descending order depend on taxonomy lv  ##
-        sample_order = dic_sample_order.keys()
+        sample_order = list( dic_sample_order.keys() )
         sample_order.sort()
         sample_order = sample_order[1:]
         
