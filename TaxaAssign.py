@@ -255,6 +255,10 @@ class taxaassign :
             temp_num += 1
 
         ##  Writing assignment statistic with descending order depend on taxonomy lv  ##
+        sample_order = dic_sample_order.keys()
+        sample_order.sort()
+        sample_order = sample_order[1:]
+        
         for num in dic_otu_tax.keys():
             print( "%s taxonomy level(%s) file writing......" % ( num, tax_lv_lst[ num ] ), end="" )
             summary_matrix = []
@@ -265,10 +269,8 @@ class taxaassign :
 
             dic_temp_num = {}
             count_matrix = []
-            for filtered_sample in filtered_samples:
-                summary_temp_matrix = []
-                f_name = filtered_sample.split( "_filtered" )[ 0 ].replace( "-", "_" ).replace( " ", "_" )
-                summary_temp_matrix.append( f_name )
+            for f_name in sample_order:
+                summary_temp_matrix = [ f_name ]
 
                 dic_temp_num[f_name] = 0
                 temp_matrix = []
@@ -289,10 +291,8 @@ class taxaassign :
                 summary_temp_matrix.append( k )
             summary_matrix.append( summary_temp_matrix )
 
-            for filtered_sample in filtered_samples:
-                summary_temp_matrix = []
-                f_name = filtered_sample.split( "_filtered" )[ 0 ].replace( "-", "_" ).replace( " ", "_" )
-                summary_temp_matrix.append( f_name )
+            for f_name in sample_order:
+                summary_temp_matrix = [ f_name ]
                 for i in count_matrix:
                     if count_matrix.index( i ) != int( dic_sample_order[ f_name ] ) - 1:
                         continue
