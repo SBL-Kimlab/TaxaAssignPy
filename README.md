@@ -13,20 +13,22 @@ For the users who have own Linux system, they just need to install two other pre
 
 However, for the users who are going to utilize cloud service, they can run the pipeline just with run the 'ipynb' on the Google Colaboratory.
 
-VSEARCH can be installed easily by using 'apt' or 'anaconda' command as below, or install manually with [VSEARCH github](https://github.com/torognes/vsearch/).
-
+VSEARCH can be installed easily by using 'apt',
 ```
 apt install vsearch -y
 ```
+or 'anaconda',
 ```
 conda install -c bioconda vsearch -y
 ```
+or install manually with [VSEARCH github](https://github.com/torognes/vsearch/).
 
-RDP Classifier can be installed by using 'anaconda' as below, or install manually with [RDP Classifier github](https://github.com/rdpstaff/classifier).
 
+RDP Classifier can be installed by using 'anaconda',
 ```
 conda install -c bioconda rdp_classifier -y
 ```
+or install manually with [RDP Classifier github](https://github.com/rdpstaff/classifier).
 
 ## Usage
 In the TaxaAssignPy pipeline, there are seven different modules in detail. If you want to see the results of each step, you can use an individual module as below.
