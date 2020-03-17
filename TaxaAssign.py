@@ -320,7 +320,7 @@ class taxaassign :
             re_from = "\t".join( total_sum_str )
             re_to = "\t".join( list( df.loc[ 0 ] ) )
 
-            to_write = df.to_csv( sep="\t", index = False ).replace( re_from, "%s\r\n\r\n%s" % (
+            to_write = df.to_csv( sep="\t", index = False ).replace( re_from, "%s\n\n\n\n%s" % (
                     re_from.replace( str( total_sum_matrix[ 0 ] ) + "\t", "Total\t" ), re_to))
             to_write = "\r\n".join( to_write.split( "\n" )[ 1: ] )
             f = open( dir_result_summary + "%s_rdp-classifier.txt" % num, "w" )
@@ -390,7 +390,7 @@ class taxaassign :
             f = open( dir_result_summary + "%s_rdp-classifier.txt" % num, "r" )
             r = f.read()
             f.close()
-            count_table = r.split( "\n" * 4 )[ 0 ]
+            count_table = r.split( "\r\n" * 2 )[ 0 ]
             lines = count_table.split( "\n" )
             tax_name_lst = []
             tax_num_lst = []
