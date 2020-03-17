@@ -17,6 +17,8 @@ VSEARCH can be installed easily by using 'apt' or 'anaconda' command as below, o
 
 ```
 apt install vsearch -y
+```
+```
 conda install -c bioconda vsearch -y
 ```
 
