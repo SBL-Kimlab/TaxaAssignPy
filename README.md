@@ -5,11 +5,11 @@
 
 The TaxaAssignPy is a convenient and rapid pipeline for taxonomy assignments based on rRNA sequence. The TaxaAssignPy automatically defines Operational Taxonomic Units (OTUs) with raw sequence data and classify the OTUs based on the naive Bayesian classifier method. For both processes, TaxaAssignPy utilizes two other published tools, [VSEARCH](https://github.com/torognes/vsearch/) and [RDP Classifier](http://rdp.cme.msu.edu/classifier/classifier.jsp).
 
-Another goal of this project is to create a pipeline for the person who is not familiar with computation by using cloud services. For that reason, two cloud services of Google, [Colaboratory](https://colab.research.google.com/notebooks/intro.ipynb) and [Drive](https://www.google.com/drive/), was chosen. Google Colaboratory service with python3 was chosen to run the pipeline and Google drive was chosen to importing input data and store output results.
+Another goal of this project is to create a pipeline for the person who is not familiar with computation by using cloud services. For that reason, two cloud services of Google, [Colaboratory](https://colab.research.google.com/notebooks/intro.ipynb) and [Drive](https://www.google.com/drive/), were recommended. Google Colaboratory service was chosen to run the pipeline and Google drive was chosen to import input data and store output results.
 
 ## Install
 
-For the users who have own Linux system, they just need to install two other preprocess tools, VSEARCH and RDP Classifier. The TaxaAssignPy is a python module so pipeline itself does not need extra installation steps.
+For the users who have own Linux system, they just need to install two other preprocess tools, VSEARCH and RDP Classifier. The TaxaAssignPy is a python library so pipeline itself does not need extra installation steps.
 
 However, for the users who are going to utilize cloud service, they can run the pipeline just with run the 'ipynb' on the Google Colaboratory.
 
@@ -56,6 +56,9 @@ TaxaAssign.autorun_all( path )
 ```
 
 ## References
+
+* Blaxter, M.; Mann, J.; Chapman, T.; Thomas, F.; Whitton, C.; Floyd, R.; Abebe, E. (2005)
+**Defining operational taxonomic units using DNA barcode data** *Philos Trans R Soc Lond B Biol Sci* DOI: [10.1098/rstb.2005.1725](https://royalsocietypublishing.org/doi/10.1098/rstb.2005.1725)
 
 * Rognes T, Flouri T, Nichols B, Quince C, Mahé F. (2016)
 **VSEARCH: a versatile open source tool for metagenomics.** *PeerJ* 4:e2584. DOI: [10.7717/peerj.2584](https://peerj.com/articles/2584/)
