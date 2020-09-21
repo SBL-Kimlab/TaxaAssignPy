@@ -58,7 +58,7 @@ TaxaAssign.autorun_all( path )
 ## References
 
 * Blaxter, M.; Mann, J.; Chapman, T.; Thomas, F.; Whitton, C.; Floyd, R.; Abebe, E. (2005)
-**Defining operational taxonomic units using DNA barcode data** *Philos Trans R Soc Lond B Biol Sci* DOI: [10.1098/rstb.2005.1725](https://royalsocietypublishing.org/doi/10.1098/rstb.2005.1725)
+**Defining operational taxonomic units using DNA barcode data** *Philos Trans R Soc Lond B Biol Sci*. 360 (1462): 1935–43. DOI: [10.1098/rstb.2005.1725](https://royalsocietypublishing.org/doi/10.1098/rstb.2005.1725)
 
 * Rognes T, Flouri T, Nichols B, Quince C, Mahé F. (2016)
 **VSEARCH: a versatile open source tool for metagenomics.** *PeerJ* 4:e2584. DOI: [10.7717/peerj.2584](https://peerj.com/articles/2584/)
