@@ -120,8 +120,8 @@ class taxaassign :
 
         ###   OTU clutering   ###
         otu_file = total_file.replace(".fasta", "_otus.fasta")
-        command = "%s --cluster_unoise %s --centroids %s --id %s --minsize %s --strand plus" % (
-                    file_vsearch, derep_file, otu_file, 0.97, 2)
+        command = "%s --cluster_unoise %s --centroids %s --id %s --minsize %s --maxaccepts %s --maxrejects %s --strand plus" % (
+                    file_vsearch, derep_file, otu_file, 0.97, 2, 0, 0)
         print( command )
         ( exitstatus, outtext ) = subprocess.getstatusoutput( command )
         print( outtext )
