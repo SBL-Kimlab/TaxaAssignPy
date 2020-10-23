@@ -140,8 +140,8 @@ class taxaassign :
         ###   OTU table making   ###
         otu_table = total_file.replace(".fasta", "_otu_table.txt")
         map_uc = total_file.replace(".fasta", "_map.uc")
-        command = "%s --usearch_global %s --db %s --otutabout %s --uc %s --id %s --maxrejects %s --strand both" % (
-                          file_vsearch, total_file, nch_file, otu_table, map_uc, 0.97, 128)
+        command = "%s --usearch_global %s --db %s --otutabout %s --uc %s --id %s --strand both" % (
+                          file_vsearch, total_file, nch_file, otu_table, map_uc, 0.97)
         print( command )
         ( exitstatus, outtext ) = subprocess.getstatusoutput( command )
         print( outtext )
